@@ -1,0 +1,32 @@
+.flex-container{
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+
+.flex-box1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-box1 div{
+    background-color: rgb(199, 199, 199);
+    width: 350px;
+    height: 500px;
+    margin-top: 2%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.texto{
+    text-align: center; 
+    padding-top: 7%;
+    padding-left: 3%; 
+    font-size: 25px; 
+}
+
+#Video {
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}

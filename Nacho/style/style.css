@@ -17,8 +17,12 @@
 }
 .logoCoche
 {
-    background-image: url(../imagenes/cocheLogo.svg);   
+    background-image: url(../imagenes/coche-logo.png);   
     height: 40px;
     width: 230px;
     background-repeat: no-repeat;
+}
+.cabeceraNavLista li 
+{
+    padding: 0 30px 0 0;
 }

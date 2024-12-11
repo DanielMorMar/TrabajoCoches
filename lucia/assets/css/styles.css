@@ -1,0 +1,100 @@
+:root
+{
+	--cucumber: #00ab61;
+}
+
+body
+{
+	margin: 0px;
+}
+
+p
+{
+	color: grey;
+}
+
+
+.main-container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+/* BANNER 1 */
+
+.banner-1
+{
+	height: 510px; /* El alto de la imagen son 605px*/
+
+	background-image: url("../images/bg_img_1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	justify-content: right;
+}
+
+.banner-1 > div
+{
+
+	margin-top: 100px;
+	margin-right: 10vw;
+	max-width: 400px;
+}
+
+
+
+/* BANNER 2 y 3 */
+
+.banner-middle
+{
+	padding: 30px 0px;
+	gap: 40px;
+}
+
+.banner-middle > div
+{
+	max-width: 19%;
+}
+
+.flex-row
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.banner-3
+{
+	background-color: whitesmoke;
+}
+
+.banner-3 a
+{
+	text-decoration: none; /* Para quitar el subrayado */
+	color: var(--cucumber);
+}
+
+
+
+/* BANNER 4 */
+
+.banner-4
+{
+	height: 510px; /* El alto de la imagen son 605px*/
+
+	background-image: url("../images/bg_img_2.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #f3f2ee;
+}
+
+.banner-4 > div
+{
+	margin-left: 10%;
+	margin-top: 120px;
+}

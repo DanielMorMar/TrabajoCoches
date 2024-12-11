@@ -17,6 +17,25 @@
     text-align: center;
 }
 
+.flex-box2{
+    display: flex;
+    flex-direction:column;
+    background-color: aqua;
+}
+
+.deportivo{
+    background-image: url(/ferrari.jpg);
+}
+
+.flex-box2 div {
+    background-color: blueviolet;
+    width: 50%;
+    height: 200px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    align-self: center;
+}
+
 .texto{
     text-align: center; 
     padding-top: 7%;

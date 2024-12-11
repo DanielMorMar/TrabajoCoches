@@ -1,91 +1,100 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+:root
+{
+	--cucumber: #00ab61;
+}
 
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
+body
+{
+	margin: 0px;
+}
+
+p
+{
+	color: grey;
 }
 
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+.main-container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
+/* BANNER 1 */
 
+.banner-1
+{
+	height: 510px; /* El alto de la imagen son 605px*/
 
-/* Featurettes
-------------------------- */
+	background-image: url("../images/bg_img_1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+	display: flex;
+	justify-content: right;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
+.banner-1 > div
+{
+
+	margin-top: 100px;
+	margin-right: 10vw;
+	max-width: 400px;
 }
 
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
 
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-	margin-bottom: 1.25rem;
-	font-size: 1.25rem;
-	line-height: 1.4;
-  }
+/* BANNER 2 y 3 */
 
-  .featurette-heading {
-	font-size: 50px;
-  }
+.banner-middle
+{
+	padding: 30px 0px;
+	gap: 40px;
 }
 
-@media (min-width: 62em) {
-  .featurette-heading {
-	margin-top: 7rem;
-  }
+.banner-middle > div
+{
+	max-width: 19%;
 }
 
+.flex-row
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.banner-3
+{
+	background-color: whitesmoke;
+}
+
+.banner-3 a
+{
+	text-decoration: none; /* Para quitar el subrayado */
+	color: var(--cucumber);
+}
+
+
+
+/* BANNER 4 */
+
+.banner-4
+{
+	height: 510px; /* El alto de la imagen son 605px*/
+
+	background-image: url("../images/bg_img_2.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #f3f2ee;
+}
+
+.banner-4 > div
+{
+	margin-left: 10%;
+	margin-top: 120px;
+}

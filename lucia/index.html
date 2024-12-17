@@ -1,144 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AutoCam</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCam</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="header">
+        <h1>AutoCam</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#about">Conócenos</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <h2>Tu viaje comienza aquí</h2>
+        <p>Encuentra el coche ideal para cada ocasión. Alquila o compra con confianza.</p>
+        <form class="postal-code-form">
+            <input type="text" placeholder="Introduce tu código postal">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
 
-	<nav class="flex-row">
-		<ul>
-			<li><a href="#">Conócenos</a></li>
-		</ul>
-		<form>
-			<select>
-				<option selected>Español</option>
-				<option>Valencià</option>
-				<option>Català</option>
-				<option>Galego</option>
-				<option>Euskara</option>
-			</select>
-		</form>
-	</nav>
+    <section id="about" class="about">
+        <h2>¿Quiénes somos?</h2>
+        <p>En AutoCam nos especializamos en ofrecer vehículos de alta calidad para todas tus necesidades.</p>
+    </section>
 
+    <section id="services" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-card">
+            <h3>Alquiler de Coches</h3>
+            <p>Elige entre una amplia gama de vehículos para cualquier ocasión.</p>
+        </div>
+        <div class="service-card">
+            <h3>Compra de Coches</h3>
+            <p>Encuentra el coche de tus sueños con las mejores condiciones.</p>
+        </div>
+        <div class="service-card">
+            <h3>Mantenimiento</h3>
+            <p>Servicios de mantenimiento y reparación para que tu coche esté siempre como nuevo.</p>
+        </div>
+    </section>
 
-
-	<div class="main-container">
-
-		<!-- BANNER 1 -->
-		<div class="banner-1">
-			<div>
-				<h1 class="playfair-display-pepe">Comienza tu viaje</h1>
-				<p>Introduce tu código postal y dependiendo de tu ciudad accederás a el alquiler de vehiculos.</p>
-				<form>
-					<input type="text" placeholder="Código postal">
-					<input type="submit" value="ENTRAR">
-				</form>
-			</div>
-		</div>
-
-
-
-		<!-- BANNER 2 -->
-		<div class="flex-row banner-middle">
-			<div>
-				<h3>Compra online</h3>
-				<p>Recibe tu pedido en casa con la misma calidad y frescura de siempre.</p>
-			</div>
-
-			<div>
-				<img src="assets/images/worker_1.jpeg" width="100%">
-			</div>
-		</div>
-
-
-
-
-		<!-- BANNER 3 -->
-		<div class="flex-row banner-middle banner-3">
-			<div>
-				<img src="" width="100%">
-			</div>
-			
-			<div>
-				<h3>Nueva tienda online en algunas zonas</h3>
-				<p>Por el momento, la nueva app y web está disponible en Valencia, Barcelona, Madrid y otras poblaciones. Introduce tu código postal arriba para ver si repartimos en tu zona. Si aún no llegamos, ¡apúntate y te avisamos!</p>
-				<p><a href="#">Avísame</a></p>
-			</div>
-		</div>
-
-
-
-		<!-- BANNER 4 -->
-		<div class="banner-4">
-			<div>
-				<h1>Empieza tu compra<br>en AutoCam</h1>
-				<form>
-					<input type="text" placeholder="Código postal">
-					<input type="submit" value="ENTRAR">
-				</form>
-				<p>O descarga la App y haz tu compra en<br>cualquier momento.</p>
-
-				<div>
-					<a href="#">
-						<img src="assets/svg/google_play.svg">
-					</a>
-					<a href="#">
-						<img src="assets/svg/apple_store.svg"> 
-					</a> 
-				</div>
-			</div>
-		</div>
-
-
-
-		<!-- FOOTER -->
-
-		<footer>
-			<div class="flex-row">
-				<div>
-					<ul>
-						<li><h3>Cliente</h3></li>
-						<li><a href="#">Concesionarios</a></li>
-						<li><a href="#">Consejos</a></li>
-						<li><a href="#">Factura cliente</a></li>
-					</ul>
-				</div>
-
-				<div>
-					<ul>
-						<li><h3>Trabajador</h3></li>
-						<li><a href="#">Trabaja con nosotros</a></li>
-					</ul>
-				</div>
-
-				<div>
-					<ul>
-						<li><h3>Proveedor</h3></li>
-						<li><a href="#">Factura-Me</a></li>
-						<li><a href="#">Portal Trinidad</a></li>
-					</ul>
-				</div>
-
-				<div>
-					<ul>
-						<li><h3>Sociedad</h3></li>
-						<li><a href="#">Actualidad</a></li>
-						<li><a href="#">Sala de prensa</a></li>
-					</ul>
-				</div>
-
-				<div>
-					<h2>800 500 220</h2>
-				</div>
-			</div>
-		</footer>
-
-
-	</div>
-	
+    <footer id="contact" class="footer">
+        <h2>Contacto</h2>
+        <p>Teléfono: 800 500 220</p>
+        <p>Email: contacto@autocam.com</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

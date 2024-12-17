@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f8f9fa;
+    background-color: #bddaf7;
 }
 
 .container {
@@ -41,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ nav ul li a {
     background-image: url('hero.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #000000;
     text-align: center;
     padding: 4rem 0;
 }

@@ -256,18 +256,6 @@ header {
    justify-content: space-around;
  }
 
- .rowbanner {
-   margin-right: -15px;
-   margin-left: -15px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: right;
-   background-image: url(banner.jpg);
-   height: 500px;
-
-
- }
 
  .rowbanner2 {
    margin-right: -15px;

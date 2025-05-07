@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS camp; USE camp;
-
+-- Tabla: cliente
 CREATE TABLE cliente (
     codcli CHAR(4) PRIMARY KEY,
     nombre VARCHAR(20),
@@ -13,7 +13,7 @@ CREATE TABLE gama (
     codgama CHAR(2) PRIMARY KEY,
     nomgama VARCHAR(20),
     stock INTEGER,
-    precio MONEY
+    precio NUMERIC(10, 2)
 );
 
 -- Tabla: coche
@@ -33,7 +33,7 @@ CREATE TABLE reserva (
     f_fin DATE,
     dias INTEGER,
     lugar VARCHAR(50),
-    importe MONEY DEFAULT 0,
+    importe NUMERIC(10, 2) DEFAULT 0,
     gama VARCHAR(2) NOT NULL,
     codcliente CHAR(4) NOT NULL,
     f_recogida DATE,
@@ -69,8 +69,8 @@ INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1212JJJ', 'Ford Tr
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1313KKK', 'Mercedes Vito', 'foto20.jpg', 'D1');
 
 -- Inserción de datos en gama
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, '23,00 €');
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, '23,00 €');
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, '23,00 €');
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, '15,00 €');
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('D1', 'Furgoneta', 3, '28,00 €');
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('D1', 'Furgoneta', 3, 28.00);

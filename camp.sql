@@ -1,6 +1,6 @@
 -- Primero, conecta a una base de datos de PostgreSQL como 'postgres' o alguna base de datos existente para poder crear la base de datos.
 -- Crear la base de datos si no existe (esto debe hacerse manualmente desde el cliente de PostgreSQL).
--- CREATE DATABASE camp; -- Esto se hace solo si la base de datos no existe.
+CREATE DATABASE camp; -- Esto se hace solo si la base de datos no existe.
 
 -- Luego, conéctate a la base de datos 'camp' y ejecuta el siguiente código.
 
@@ -29,13 +29,12 @@ CREATE TABLE coche (
     matricula CHAR(7) PRIMARY KEY,
     modelo VARCHAR(40),
     foto VARCHAR(15),
-    codgama CHAR(2) NOT NULL,
-    CONSTRAINT fk_coche_gama FOREIGN KEY (codgama) REFERENCES gama(codgama)
+    codgama CHAR(2) NOT NULL
 );
 
 -- Crear la tabla reserva
 CREATE TABLE reserva (
-    codreserva SERIAL PRIMARY KEY,
+    codreserva INTEGER PRIMARY KEY,
     fecha_res DATE NOT NULL,
     f_inicio DATE,
     f_fin DATE,
@@ -44,9 +43,7 @@ CREATE TABLE reserva (
     importe NUMERIC(10, 2) DEFAULT 0,
     gama VARCHAR(2) NOT NULL,
     codcliente CHAR(4) NOT NULL,
-    f_recogida DATE,
-    CONSTRAINT fk_reserva_cliente FOREIGN KEY (codcliente) REFERENCES cliente(codcli),
-    CONSTRAINT fk_reserva_coche FOREIGN KEY (codcoche) REFERENCES coche(matricula)
+    f_recogida DATE
 );
 
 -- Inserción de datos en cliente

@@ -1,5 +1,6 @@
 CREATE DATABASE IF NOT EXISTS camp; USE camp;
 -- Tabla: cliente
+DROP TABLE IF EXISTS cliente, coche, gama, reserva;
 CREATE TABLE cliente (
     codcli CHAR(4) PRIMARY KEY,
     nombre VARCHAR(20),

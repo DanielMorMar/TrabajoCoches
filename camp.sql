@@ -23,7 +23,7 @@ CREATE TABLE coche (
     modelo VARCHAR(40),
     foto VARCHAR(15),
     codgama CHAR(2) NOT NULL,
-    CONSTRAINT fk_coche_gama FOREIGN KEY (codgama) REFERENCES gama(codgama)
+
 );
 
 -- Tabla: reserva
@@ -38,8 +38,6 @@ CREATE TABLE reserva (
     gama VARCHAR(2) NOT NULL,
     codcliente CHAR(4) NOT NULL,
     f_recogida DATE,
-    CONSTRAINT fk_reserva_cliente FOREIGN KEY (codcliente) REFERENCES cliente(codcli),
-    CONSTRAINT fk_reserva_coche FOREIGN KEY (coche) REFERENCES coche(matricula)
 );
 
 -- Inserción de datos en cliente

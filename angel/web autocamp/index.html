@@ -10,9 +10,9 @@
       <!--menú desde aquí-->
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="coches.html">Alquiler de coches</a>
+        <a href="coches.php">Alquiler de coches</a>
         <a href="#">Iniciar sesión</a>
-        <a href="#">Contacta</a>
+        <a href="nosotros.html">Sobre nosotros</a>
       </div>  
       <div id="main">
         <button class="openbtn" onclick="openNav()">☰ Menú</button>
@@ -37,10 +37,20 @@
   <div class="vehicle-type">
     <h2>¿Qué tipo de vehículo quieres alquilar?</h2>
     <div class="vehicle-buttons">
-      <input type="radio" id="car" name="vehicle" checked>
-      <label for="car">
+      <input type="radio" id="Familiar" name="vehicle" checked>
+      <label for="Familiar">
         <img src="eléctrico.png" alt="Coche">
-        Coches
+        Familiar
+      </label>
+      <input type="radio" id="Lujo" name="vehicle" checked>
+      <label for="Lujo">
+        <img src="eléctrico.png" alt="Coche">
+        Lujo
+      </label>
+      <input type="radio" id="4x4" name="vehicle" checked>
+      <label for="4x4">
+        <img src="eléctrico.png" alt="Coche">
+        4x4
       </label>
 
       <input type="radio" id="van" name="vehicle">
@@ -92,11 +102,6 @@
       <option>Alemania</option>
     </select>
 
-    <div class="checkbox-field">
-      <input type="checkbox" id="rate">
-      <label for="rate">Tarifa negociada</label>
-    </div>
-
     <button class="search-btn">Buscar</button>
   </div>
 <!--código de carrusel cogido de w3schools(desde aquí)-->
@@ -105,19 +110,25 @@
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="eléctrico.png" style="width:70%">
-    <div class="text">Eléctrico</div>
+    <div class="text">Lujo</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <img src="furgoneta.png" style="width:70%">
-    <div class="text">Furgoneta</div>
+    <div class="text">Familiar</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="premium.png" style="width:70%">
-    <div class="text">Premium</div>
+    <div class="text">4x4</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="premium.png" style="width:70%">
+    <div class="text">Furgonetas</div>
   </div>
 
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -130,6 +141,7 @@
     <span class="dot" onclick="currentSlide(1)"></span> 
     <span class="dot" onclick="currentSlide(2)"></span> 
     <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
   </div>
   
   <script>

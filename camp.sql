@@ -46,6 +46,13 @@ INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('1', 'Pe
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('2', 'Lucas', 'Iniesta', 'Ausiach March, 23', 'lui@gmailx.com');
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('3', 'Ana', 'Lorca Sanz', 'Ausiach March, 23', 'annta@gmailx.com');
 
+-- Inserción de datos en gama
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('D1', 'Furgoneta', 3, 28.00);
+
 -- Inserción de datos en coche
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1111AAA', 'Volvo z', 'foto1.jpg', 'F1');
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1112AAA', 'Volvo EX40', 'foto2.jpg', 'F1');
@@ -68,9 +75,3 @@ INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('0000III', 'BMW Ser
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1212JJJ', 'Ford Transit', 'foto19.jpg', 'D1');
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1313KKK', 'Mercedes Vito', 'foto20.jpg', 'D1');
 
--- Inserción de datos en gama
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23.00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23.00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23.00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15.00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('D1', 'Furgoneta', 3, 28.00);

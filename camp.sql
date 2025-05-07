@@ -22,21 +22,21 @@ CREATE TABLE coche (
     matricula CHAR(7) PRIMARY KEY,
     modelo VARCHAR(40),
     foto VARCHAR(15),
-    codgama CHAR(2) NOT NULL,
+    codgama CHAR(2) NOT NULL
 
 );
 
 -- Tabla: reserva
 CREATE TABLE reserva (
     codreserva SERIAL PRIMARY KEY,
-    fecha_res DATE NOT NULL,
+    fecha_res DATE NOT NULL
     f_inicio DATE,
     f_fin DATE,
     dias INTEGER,
     lugar VARCHAR(50),
     importe NUMERIC(10, 2) DEFAULT 0,
-    gama VARCHAR(2) NOT NULL,
-    codcliente CHAR(4) NOT NULL,
+    gama VARCHAR(2) NOT NULL
+    codcliente CHAR(4) NOT NULL
     f_recogida DATE,
 );
 

@@ -15,9 +15,9 @@
     error_reporting(E_ALL);
     // Conectar a la base de datos
     // Cambiar el servername por el que proceda: localhost, IP, url, …
-    $servername = "127.0.0.1";
+    $servername = "0.0.0.0";
     $username = "usuario";
-    $password = "p@assword";
+    $password = "p@ssw0rd";
     $dbname = "camp";
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Verificar la conexión
@@ -51,33 +51,15 @@
             <h1> COCHES DISPONIBLES</h1>
             <table>
                 <tr>
-                    <th>COCHES</th>
-                    <th></th>
-                    <th></th>
+                    <th>Matricula</th>
+                    <th>Modelo</th>
+                    <th>Foto</th>
+                    <th>Codigo gama</th>
                 </tr>
-                <tr>
-                    <td>matrícula</td>
-                    <td>Marca</td>
-                    <td>Modelo</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>AAA1234</td>
-                    <td>Renault</td>
-                    <td>Megane</td>
-                    <td><a href="datos.html">ver</a></td>
-                </tr>
-                <tr>
-                    <td>AAA1234</td>
-                    <td>Renault</td>
-                    <td>Megane</td>
-                    <td><a href="datos.html">ver</a></td>
-                </tr>
-            </table>
             <tbody>
                 <?php
                     // Consultar los datos
-                    $sql = "SELECT * FROM cliente";
+                    $sql = "SELECT * FROM coche";
                     $result = $conn->query($sql);
                     if ($result === false) {
                     die("Error en la consulta: " . $conn->error);
@@ -85,10 +67,10 @@
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                         echo " <tr>
-                            <td>{$row['cliente']}</td>
-                            <td>{$row['gama']}</td>
-                            <td>{$row['coche']}</td>
-                            <td>{$row['reserva']}</td>
+                            <td>{$row['matricula']}</td>
+                            <td>{$row['modelo']}</td>
+                            <td>{$row['foto']}</td>
+                            <td>{$row['codgama']}</td>
                             </tr>";
                         }
                     }

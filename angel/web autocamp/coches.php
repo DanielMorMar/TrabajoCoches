@@ -51,10 +51,14 @@
             <h1> COCHES DISPONIBLES</h1>
             <table>
                 <tr>
-                    <th>Matricula</th>
                     <th>Modelo</th>
                     <th>Foto</th>
-                    <th>Codigo gama</th>
+                    <th>Gama</th>
+                    <th>Precio</th>
+                    <th>Combustible</th>
+                    <th>Motor</th>
+                    <th>Plazas</th>
+                    <th>Maletas</th>
                 </tr>
             <tbody>
                 <?php
@@ -67,12 +71,16 @@
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                             $ruta_imagen = "imagenes/" . $row['foto'];
-                        echo " <tr>
-                            <td>{$row['matricula']}</td>
-                            <td>{$row['modelo']}</td>
-                            <td><img src='{$ruta_imagen}' alt='Foto del coche' style='width: 100px; height: 100px;'></td>
-                            <td>{$row['codgama']}</td>
-                            </tr>";
+                        echo "<tr>
+                    <td>{$row['modelo']}</td>
+                    <td><img src='{$ruta_imagen}' alt='Foto del coche' style='width: 100px; height: 100px;'></td>
+                    <td>{$row['nomgama']}</td>
+                    <td>{$row['precio']} €</td>
+                    <td>{$row['combustible']}</td>
+                    <td>{$row['motor']}</td>
+                    <td>{$row['plazas']}</td>
+                    <td>{$row['maletas']}</td>
+                  </tr>";
                         }
                     }
                 ?>

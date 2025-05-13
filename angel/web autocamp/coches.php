@@ -66,10 +66,11 @@
                     }
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
+                            $ruta_imagen = "imagenes/" . $row['foto'];
                         echo " <tr>
                             <td>{$row['matricula']}</td>
                             <td>{$row['modelo']}</td>
-                            <td>{$row['foto']}</td>
+                            <td><img src='{$ruta_imagen}' alt='Foto del coche' style='width: 100px; height: 100px;'></td>
                             <td>{$row['codgama']}</td>
                             </tr>";
                         }

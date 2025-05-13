@@ -59,7 +59,7 @@
             <tbody>
                 <?php
                     // Consultar los datos
-                    $sql = "SELECT * FROM coche";
+                    $sql = "SELECT modelo, foto, nomgama, precio, combustible, motor, plazas, maletas FROM coche, gama WHERE gama.codgama = coche.codgama AND stock > 0";;
                     $result = $conn->query($sql);
                     if ($result === false) {
                     die("Error en la consulta: " . $conn->error);

@@ -53,12 +53,12 @@ INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES
     ('3', 'Ana', 'Lorca Sanz', 'Ausiach March, 23', 'annta@gmailx.com');
 
 -- Inserción de datos en gama
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES 
-    ('L1', 'Lujo', 2, 23.00),
-    ('F2', 'Familiar', 3, 23.00),
-    ('T1', '4 x 4', 1, 23.00),
-    ('F1', 'Familiar', 4, 15.00),
-    ('D1', 'Furgoneta', 3, 28.00);
+INSERT INTO gama (codgama, nomgama, stock, precio,combustible,motor,plazas,maletas) VALUES 
+    ('L1', 'Lujo', 2, 23.00, 'E', 'A', 7, 4),
+    ('F2', 'Familiar', 3, 23.00, 'F', 'M', 5, 3),
+    ('T1', '4 x 4', 1, 23.00, 'E', 'A', 7, 4),
+    ('F1', 'Familiar', 4, 15.00, 'H', 'A', 5, 4),
+    ('D1', 'Furgoneta', 3, 28.00,'F', 'M', 3, 8);
 
 -- Inserción de datos en coche
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES 

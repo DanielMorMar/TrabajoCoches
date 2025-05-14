@@ -16,8 +16,8 @@
     // Conectar a la base de datos
     // Cambiar el servername por el que proceda: localhost, IP, url, …
     $servername = "0.0.0.0";
-    $username = "usuario";
-    $password = "p@ssw0rd";
+    $username = "admin";
+    $password = "123456789";
     $dbname = "camp";
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Verificar la conexión

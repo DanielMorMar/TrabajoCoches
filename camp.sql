@@ -1,7 +1,7 @@
 -- Primero, conecta a una base de datos de PostgreSQL como 'postgres' o alguna base de datos existente para poder crear la base de datos.
 -- Crear la base de datos si no existe (esto debe hacerse manualmente desde el cliente de PostgreSQL).
 CREATE DATABASE camp; -- Esto se hace solo si la base de datos no existe.
-
+use camp;
 -- Luego, conéctate a la base de datos 'camp' y ejecuta el siguiente código.
 
 -- Eliminar tablas si existen

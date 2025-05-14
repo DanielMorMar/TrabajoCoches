@@ -21,7 +21,11 @@ CREATE TABLE gama (
     codgama CHAR(2) PRIMARY KEY,
     nomgama VARCHAR(20),
     stock INTEGER,
-    precio NUMERIC(10, 2)
+    precio NUMERIC(10, 2),
+    combustible VARCHAR(20),
+    motor VARCHAR (20),
+    plazas INTEGER,
+    maletas INTEGER
 );
 
 -- Crear la tabla coche
